@@ -1,21 +1,14 @@
-.page {
-  font-family: 'Noto', sans-serif;
-}
-.container {
-  max-width: 1000px;
-  margin-inline: auto;
-  padding-inline: 25px;
-}
 .main {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 1033px;
+  min-height: 1033px;
   background-color: #e6eefa;
   border-radius: 20px;
   padding: 22px 20px;
   margin-bottom: 80px;
   margin-top: 18px;
+  overflow: hidden;
 }
 .header {
   display: flex;
@@ -24,44 +17,20 @@
   font-size: 15px;
   z-index: 99;
 }
-.header__menu {
-}
 .header__menu-list {
   display: flex;
   column-gap: 35px;
 }
-.header__menu-item {
-}
-.header__menu-link {
-  position: relative;
-  color: #3b65ff;
-  text-decoration: none;
-}
-
-.header__menu-link::after {
-  content: '';
-  position: absolute;
-  display: block;
-  margin-top: 2px;
-  height: 0.5px;
-  background: #3b65ff;
-  width: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.header__menu-link:hover::after {
-  width: 100%;
-}
 .header__icons {
   display: flex;
   column-gap: 10px;
+  margin-right: 8px;
+  margin-bottom: 5px;
 }
 .word {
   margin-top: -33px;
   margin-left: -21px;
 }
-
 .word__text {
   margin: 0;
   padding: 0;
@@ -73,24 +42,18 @@
   text-transform: uppercase;
   color: #fff;
 }
-.content {
-}
 .content__card {
   position: absolute;
   bottom: 52px;
   left: 20px;
-  width: 277px;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 130%;
-  letter-spacing: -0.03em;
+  width: 254px;
   color: #000;
 }
 .content__description {
   margin-bottom: 19px;
   font-weight: 500;
   font-size: 20px;
-  line-height: 130%;
+  line-height: 138%;
   letter-spacing: -0.03em;
 }
 .content__price {
@@ -100,29 +63,14 @@
   line-height: 130%;
   letter-spacing: -0.01em;
   color: #3b65ff;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
 }
 .content__price-val {
   font-family: 'Raleway', sans-serif;
   font-weight: 450;
   margin-left: 6px;
 }
-.content__button {
-  background: #3b65ff;
-  color: #fff;
-  font-size: 20px;
-  border: 1px solid #3b65ff;
-  border-radius: 9px;
-  padding: 10px 31px 13px 31px;
-  transition: all 0.3s ease-in;
-}
-.content__button:hover {
-  background: #fff;
-  color: #3b65ff;
-}
 .content__image {
-  overflow: hidden;
-  border-bottom-right-radius: 20px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -132,36 +80,14 @@
 }
 .footer__menu {
   display: flex;
-  column-gap: 57px;
-  margin-bottom: 68px;
+  column-gap: 52px;
+  margin-bottom: 65px;
   margin-left: 13px;
 }
 .footer__menu-list {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-}
-.footer__menu-item {
-}
-.footer__menu-link {
-  position: relative;
-  color: #3b65ff;
-  text-decoration: none;
-}
-.footer__menu-link::after {
-  content: '';
-  position: absolute;
-  display: block;
-  margin-top: 2px;
-  height: 0.5px;
-  background: #3b65ff;
-  width: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.footer__menu-link:hover::after {
-  width: 100%;
 }
 .footer__bottom {
   display: flex;
@@ -176,66 +102,16 @@
 }
 .footer__links {
   display: flex;
-  column-gap: 33px;
   margin-right: 65px;
 }
 .footer__offer {
-  text-decoration: none;
-  position: relative;
-  color: #3b65ff;
-}
-.footer__offer::after {
-  content: '';
-  position: absolute;
-  display: block;
-  margin-top: 2px;
-  height: 0.5px;
-  background: #3b65ff;
-  width: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.footer__offer:hover::after {
-  width: 100%;
+  font-size: 14px !important;
+  margin-right: 33px;
 }
 .footer__rules {
-  text-decoration: none;
-  position: relative;
-  color: #3b65ff;
-}
-.footer__rules::after {
-  content: '';
-  position: absolute;
-  display: block;
-  margin-top: 2px;
-  height: 0.5px;
-  background: #3b65ff;
-  width: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.footer__rules:hover::after {
-  width: 100%;
+  margin-right: 31px;
+  font-size: 14px !important;
 }
 .footer__contact {
-  text-decoration: none;
-  position: relative;
-  color: #3b65ff;
-}
-.footer__contact::after {
-  content: '';
-  position: absolute;
-  display: block;
-  margin-top: 2px;
-  height: 0.5px;
-  background: #3b65ff;
-  width: 0;
-  transition: 0.3s;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.footer__contact:hover::after {
-  width: 100%;
+  font-size: 14px !important;
 }
